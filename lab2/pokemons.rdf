@@ -1,0 +1,407 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5/"
+     xml:base="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:untitled-ontology-5="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasDescendant"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isChild"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasDescendant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasDescendant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#relative"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isDescendant"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasPredecessor"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isParent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasPredecessor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#hasPredecessor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#relative"/>
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isPredecessor"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isChild -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isChild">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isDescendant"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isDescendant -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isDescendant">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#relative"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isParent -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isParent">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isPredecessor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isPredecessor -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#isPredecessor">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#relative"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#relative -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#relative">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#fire -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#fire">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#type"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#type -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#type"/>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#water -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#water">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#type"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#alola_raticate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#alola_raticate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#raticate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#alola_rattata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#alola_rattata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#rattata"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#arcanine -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#arcanine">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#fire"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#growlithe"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#bellossom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#bellossom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#gloom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#blastoise -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#blastoise">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#water"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#wartortle"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#bulbasaur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#bulbasaur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#gloom -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#gloom">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#oddish"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#golduck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#golduck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#water"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#psyduck"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#growlithe -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#growlithe">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#fire"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#ivysaur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#ivysaur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#bulbasaur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#mega_pidgeot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#mega_pidgeot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgeot"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#oddish -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#oddish">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgeot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgeot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgeotto"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgeotto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgeotto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgey"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgey -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pidgey">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#ponyta -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#ponyta">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#fire"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#psyduck -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#psyduck">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#rapidash -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#rapidash">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#fire"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#ponyta"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#raticate -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#raticate">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#alola_raticate"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#rattata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#rattata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#normal"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#squirtle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#squirtle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#water"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#venusaur -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#venusaur">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#ivysaur"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#vileplume -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#vileplume">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#grass"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#gloom"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#wartortle -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#wartortle">
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#pokemon"/>
+        <rdf:type rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#water"/>
+        <untitled-ontology-5:hasParent rdf:resource="http://www.semanticweb.org/stepan/ontologies/2023/8/untitled-ontology-5#squirtle"/>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
